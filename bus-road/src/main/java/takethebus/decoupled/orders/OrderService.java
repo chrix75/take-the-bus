@@ -22,11 +22,11 @@ public class OrderService {
             return;
         }
 
-        bus.publish(new ProcessOrderCommand(order));
+        bus.publish(new ProcessOrderEvent(order));
     }
 
     public void confirmOrder(Order order) {
-        bus.publish(new ProcessOrderCommand(order));
+        bus.publish(new ProcessOrderEvent(order));
     }
 
     public void refuseOrder(Order order) {
