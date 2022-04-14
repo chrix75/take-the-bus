@@ -1,10 +1,10 @@
-package takethebus.decoupled.orders.messages;
+package takethebus.decoupled.orders.events;
 
 import takethebus.decoupled.orders.Order;
 
 import java.util.StringJoiner;
 
-public class DeliverExcelFileEvent extends Message {
+public class DeliverExcelFileEvent extends Event {
     public DeliverExcelFileEvent(Order order) {
         super(order);
     }

@@ -5,7 +5,7 @@ import takethebus.decoupled.log.DomainLogging;
 import takethebus.decoupled.mails.MailService;
 import takethebus.decoupled.orders.Order;
 import takethebus.decoupled.orders.OrderService;
-import takethebus.decoupled.orders.messages.Message;
+import takethebus.decoupled.orders.events.Event;
 import takethebus.decoupled.orders.processors.CsvFileProcessor;
 import takethebus.decoupled.orders.processors.OrderProcessor;
 import takethebus.decoupled.orders.processors.XlsFileProcessor;
@@ -13,7 +13,7 @@ import takethebus.decoupled.stats.StatsUpdate;
 
 public class RefusedOrderProcessing {
     public static void main(String[] args) {
-        MBassador<Message> bus = new MBassador<>();
+        MBassador<Event> bus = new MBassador<>();
 
         MailService mailService = new MailService();
         CsvFileProcessor csvFileProcessor = new CsvFileProcessor();

@@ -1,13 +1,13 @@
 package takethebus.decoupled.orders;
 
 import net.engio.mbassy.bus.MBassador;
-import takethebus.decoupled.orders.messages.*;
+import takethebus.decoupled.orders.events.*;
 
 public class OrderService {
 
-    private final MBassador<Message> bus;
+    private final MBassador<Event> bus;
 
-    public OrderService(MBassador<Message> bus) {
+    public OrderService(MBassador<Event> bus) {
         this.bus = bus;
     }
 

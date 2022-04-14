@@ -1,11 +1,11 @@
 package takethebus.decoupled.log;
 
 import net.engio.mbassy.listener.Handler;
-import takethebus.decoupled.orders.messages.Message;
+import takethebus.decoupled.orders.events.Event;
 
 public class DomainLogging {
     @Handler
-    public void logDomainMessage(Message message) {
-        System.out.println("Log domain message: " + message);
+    public void logDomainMessage(Event event) {
+        System.out.println("Log domain event: " + event);
     }
 }

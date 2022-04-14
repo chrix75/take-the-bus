@@ -1,10 +1,10 @@
-package takethebus.decoupled.orders.messages;
+package takethebus.decoupled.orders.events;
 
 import takethebus.decoupled.orders.Order;
 
 import java.util.StringJoiner;
 
-public class DeliverCsvFileEvent extends Message {
+public class DeliverCsvFileEvent extends Event {
     public DeliverCsvFileEvent(Order order) {
         super(order);
     }

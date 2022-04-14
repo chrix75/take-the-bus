@@ -1,11 +1,11 @@
-package takethebus.decoupled.orders.messages;
+package takethebus.decoupled.orders.events;
 
 import takethebus.decoupled.orders.Order;
 
-public abstract class Message {
+public abstract class Event {
     protected final Order order;
 
-    public Message(Order order) {
+    public Event(Order order) {
         this.order = order;
     }
 

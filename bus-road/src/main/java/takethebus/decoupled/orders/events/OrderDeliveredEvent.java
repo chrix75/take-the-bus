@@ -1,10 +1,10 @@
-package takethebus.decoupled.orders.messages;
+package takethebus.decoupled.orders.events;
 
 import takethebus.decoupled.orders.Order;
 
 import java.util.StringJoiner;
 
-public class OrderDeliveredEvent extends Message {
+public class OrderDeliveredEvent extends Event {
     public OrderDeliveredEvent(Order order) {
         super(order);
     }
