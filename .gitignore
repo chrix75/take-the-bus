@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/build/
+/bus-road/build/
+/bus-road/build/classes/java/main/
+/classic-road/build/
+/classic-road/build/classes/java/main/
